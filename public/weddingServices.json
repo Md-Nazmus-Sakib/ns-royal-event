@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Wedding Photography",
+        "name": "John's Photography",
+        "image": "photo1.jpg",
+        "price": 2000,
+        "short_description": "Capture your special day with beautiful photos.",
+        "details": "Includes full-day coverage, edited high-resolution images, and an online gallery."
+    },
+    {
+        "id": 2,
+        "title": "Floral Decoration",
+        "name": "Blossom Florists",
+        "image": "floral1.jpg",
+        "price": 1500,
+        "short_description": "Elegant floral arrangements to adorn your venue.",
+        "details": "Customized flower arrangements, bouquets, and centerpieces."
+    },
+    {
+        "id": 3,
+        "title": "Catering Services",
+        "name": "Delicious Delights Catering",
+        "image": "catering1.jpg",
+        "price": 3000,
+        "short_description": "Delectable cuisine to satisfy your guests' palates.",
+        "details": "A variety of menu options, including appetizers, main courses, and desserts."
+    },
+    {
+        "id": 4,
+        "title": "Live Music Entertainment",
+        "name": "Harmony Sounds Band",
+        "image": "music1.jpg",
+        "price": 2500,
+        "short_description": "Live music to create a memorable atmosphere.",
+        "details": "Talented musicians and a wide repertoire of songs to choose from."
+    },
+    {
+        "id": 5,
+        "title": "Wedding Planning Services",
+        "name": "Dream Weddings & Events",
+        "image": "planning1.jpg",
+        "price": 3500,
+        "short_description": "Let us handle the details to make your dream wedding a reality.",
+        "details": "Full-service wedding planning, from venue selection to day-of coordination."
+    },
+    {
+        "id": 6,
+        "title": "Wedding Cake Design",
+        "name": "Sweet Creations Bakery",
+        "image": "cake1.jpg",
+        "price": 800,
+        "short_description": "Elegant and delicious wedding cakes.",
+        "details": "Custom cake designs and a variety of flavors to choose from."
+    }
+]

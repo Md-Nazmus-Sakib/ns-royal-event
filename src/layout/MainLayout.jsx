@@ -4,8 +4,8 @@ import Navbar from '../component/Navbar/Navbar';
 
 const MainLayout = () => {
     return (
-        <div className='h-full overflow-visible'>
-            <div className=''>
+        <div >
+            <div>
                 <Navbar></Navbar>
             </div>
             <Outlet></Outlet>
