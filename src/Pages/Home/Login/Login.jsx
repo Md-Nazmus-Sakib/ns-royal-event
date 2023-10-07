@@ -1,21 +1,36 @@
 import React, { useContext } from 'react';
 import loginImg from '../../../assets/Images/Login/draw2.svg'
 import loginBgImg from '../../../assets/Images/Login/loginbg.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location)
+
+    const from = location.state?.form?.pathname || '/';
+    console.log(from)
     const handelSignIn = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
+
         signIn(email, password)
             .then(result => {
                 const displayUser = result.user;
                 console.log(displayUser)
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Login Successful',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                navigate(from, { replace: true })
             })
     }
     return (

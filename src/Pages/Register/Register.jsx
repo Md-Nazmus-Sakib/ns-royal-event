@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import registerImg from '../../assets/Images/Login/register.png'
 import registerBgImg from '../../assets/Images/Login/registerBg.jpeg'
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate();
 
     const handelRegister = (event) => {
         event.preventDefault();
@@ -18,6 +20,15 @@ const Register = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser)
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'User Register Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                form.reset();
+                navigate('/')
             })
 
     }
