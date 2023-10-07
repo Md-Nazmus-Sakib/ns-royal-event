@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import registerImg from '../../assets/Images/Login/register.png'
 import registerBgImg from '../../assets/Images/Login/registerBg.jpeg'
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext)
+
+    const handelRegister = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(name, email, password)
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+            })
+
+    }
     return (
         <div>
             <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(${registerBgImg})`, backgroundSize: "cover" }} className="hero min-h-screen bg-base-200 mt-20 py-24 bg-opacity-50">
@@ -13,7 +30,7 @@ const Register = () => {
                     </div>
                     <div className="card flex-shrink-0 w-full md:w-1/2 shadow-2xl bg-pink-200 bg-opacity-30 ">
                         <h1 style={{ textShadow: ' 4px 4px 8px black' }} className="text-5xl font-bold text-center mt-12 text-white ">Register now!</h1>
-                        <form className="card-body">
+                        <form onSubmit={handelRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-white font-bold">Name</span>
@@ -36,13 +53,14 @@ const Register = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn bg-yellow-500 hover:bg-yellow-600">Register</button>
-                            </div>
-                            <div className="text-white my-4 text-center">
-                                <h2> Already Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md'><Link to={'/login'}>Login</Link></span> </h2>
+                                <button className="btn bg-yellow-500 hover:bg-yellow-600" type='submit'>Register</button>
                             </div>
 
+
                         </form>
+                        <div className="text-white my-4 text-center">
+                            <h2> Already Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md'><Link to={'/login'}>Login</Link></span> </h2>
+                        </div>
                     </div>
                 </div>
             </div>
