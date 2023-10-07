@@ -30,10 +30,10 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-secondary">Login</button>
+                                <button className="btn btn-primary">Login</button>
                             </div>
                             <div className="text-white my-4 text-center">
-                                <h2> Don't Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-secondary py-2 px-4 rounded-md'><Link to={'/register'}>Register</Link></span> </h2>
+                                <h2> Don't Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-primary hover:bg-blue-600 py-2 px-4 rounded-md'><Link to={'/register'}>Register</Link></span> </h2>
                             </div>
 
                         </form>

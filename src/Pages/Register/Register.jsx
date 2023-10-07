@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import loginImg from '../../assets/Images/Login/draw2.svg'
-import loginBgImg from '../../assets/Images/Login/loginbg.jpg'
+import registerImg from '../../assets/Images/Login/register.png'
+import registerBgImg from '../../assets/Images/Login/registerBg.jpeg'
 
 const Register = () => {
     return (
         <div>
-            <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(${loginBgImg})`, backgroundSize: "cover" }} className="hero min-h-screen bg-base-200 mt-20 py-24 bg-opacity-50">
+            <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(${registerBgImg})`, backgroundSize: "cover" }} className="hero min-h-screen bg-base-200 mt-20 py-24 bg-opacity-50">
                 <div className="hero-content flex-col md:flex-row-reverse">
                     <div className="text-center lg:text-left md:w-1/2">
-                        <img src={loginImg} alt="" />
+                        <img src={registerImg} alt="" />
                     </div>
                     <div className="card flex-shrink-0 w-full md:w-1/2 shadow-2xl bg-pink-200 bg-opacity-30 ">
                         <h1 style={{ textShadow: ' 4px 4px 8px black' }} className="text-5xl font-bold text-center mt-12 text-white ">Register now!</h1>
@@ -36,10 +36,10 @@ const Register = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-secondary">Register</button>
+                                <button className="btn bg-yellow-500 hover:bg-yellow-600">Register</button>
                             </div>
                             <div className="text-white my-4 text-center">
-                                <h2> Already Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-secondary py-2 px-4 rounded-md'><Link to={'/login'}>Login</Link></span> </h2>
+                                <h2> Already Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md'><Link to={'/login'}>Login</Link></span> </h2>
                             </div>
 
                         </form>
