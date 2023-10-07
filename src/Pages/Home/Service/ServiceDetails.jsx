@@ -9,7 +9,7 @@ const ServiceDetails = () => {
     const service = services.find(data => data.id === parseInt(id))
 
     const { image, name, price, description, details } = service;
-    console.log(service)
+    // console.log(service)
     return (
         <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(${image})`, backgroundSize: "cover" }} className='py-24 bg-opacity-60'>
             <div className="card glass mt-36 md:w-2/3 mx-auto border border-red-600">

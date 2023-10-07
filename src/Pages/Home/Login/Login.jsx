@@ -1,18 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import loginImg from '../../../assets/Images/Login/draw2.svg'
 import loginBgImg from '../../../assets/Images/Login/loginbg.jpg'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import { FaGoogle } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
+    const [error, setError] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location)
+    // console.log(location)
 
     const from = location.state?.form?.pathname || '/';
-    console.log(from)
+    // console.log(from)
     const handelSignIn = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -32,7 +34,18 @@ const Login = () => {
                 })
                 navigate(from, { replace: true })
             })
+            .catch(error => setError(error.message))
     }
+
+    const handelGoogleLogIn = () => {
+        googleSignIn()
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser)
+                navigate(from, { replace: true })
+            })
+    }
+
     return (
         <div>
             <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(${loginBgImg})`, backgroundSize: "cover" }} className="hero min-h-screen bg-base-200 mt-20 py-24 bg-opacity-50">
@@ -55,7 +68,7 @@ const Login = () => {
                                 </label>
                                 <input type="password" placeholder="password" name='password' className="input input-bordered" required />
                                 <label className="label">
-
+                                    {error && <p className='text-red-600 rounded-md font-bold bg-white p-2'>{error}</p>}
                                 </label>
                             </div>
                             <div className="form-control mt-6">
@@ -64,8 +77,14 @@ const Login = () => {
 
 
                         </form>
-                        <div className="text-white my-4 text-center">
-                            <h2> Don't Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-primary hover:bg-blue-600 py-2 px-4 rounded-md'><Link to={'/register'}>Register</Link></span> </h2>
+                        <div className="text-white my-4 text-center py-4 border-b-4 border-rose-500">
+                            <h2> Don't Have an Account please <span style={{ textShadow: ' 4px 4px 8px black' }} className='text-xl bg-primary hover:bg-blue-600 mt-4  px-4 rounded-md'><Link to={'/register'}>Register</Link></span> </h2>
+                        </div>
+
+                        <div className='mb-8 text-center'>
+                            <button onClick={handelGoogleLogIn} className="btn btn-circle btn-outline bg-rose-500 text-white">
+                                <FaGoogle></FaGoogle>
+                            </button>
                         </div>
                     </div>
                 </div>
