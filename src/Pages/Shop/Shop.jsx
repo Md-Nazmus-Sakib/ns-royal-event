@@ -17,7 +17,8 @@ const Shop = () => {
         <div className='mt-24'>
             <ShopHeader></ShopHeader>
             <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url(${imgBg})`, backgroundSize: "cover" }} className='bg-fixed py-24'>
-
+                {/* <div> */}
+                {/* <img className='' src={imgBg} alt="" /> */}
                 <Products products={weddingDress}
                     subHeader='Our New Collection Of Dress'
                     header="Wedding Dress"
