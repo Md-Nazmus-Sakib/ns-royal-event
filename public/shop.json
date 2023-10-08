@@ -3,7 +3,7 @@
         "id": 1,
         "category": "Wedding Dresses",
         "name": "Elegant Lace Wedding Gown",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/KDj2Vx1/Wedding-Decorations1.jpg",
         "price": 1200.00,
         "detail": "A stunning lace wedding gown with a timeless and elegant design. This dress features intricate lace detailing and a flowing train."
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "category": "Wedding Dresses",
         "name": "Vintage-Inspired Bridal Dress",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/s9vSGB9/Wedding-Decorations2.jpg",
         "price": 950.00,
         "detail": "A vintage-inspired bridal dress that exudes classic charm. It's adorned with delicate embroidery and a flattering A-line silhouette."
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "category": "Wedding Dresses",
         "name": "Modern Minimalist Wedding Dress",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/qrTn4bQ/Wedding-Decorations3.jpg",
         "price": 1350.00,
         "detail": "For the modern bride, this minimalist wedding dress offers clean lines and a sleek silhouette. Perfect for a contemporary wedding."
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "category": "Wedding Rings",
         "name": "Diamond Solitaire Engagement Ring",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/drVPLWK/Wedding-Rings1.jpg",
         "price": 2500.00,
         "detail": "A timeless diamond solitaire engagement ring with a brilliant-cut diamond set in a classic white gold band."
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "category": "Wedding Rings",
         "name": "Matching Wedding Band Set",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/TtWFNNk/Wedding-Rings2.jpg",
         "price": 1800.00,
         "detail": "This set includes a stunning engagement ring and matching wedding band, both adorned with sparkling diamonds."
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "category": "Wedding Rings",
         "name": "Rose Gold Eternity Ring",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/KsRXPqj/Wedding-Rings3.jpg",
         "price": 1200.00,
         "detail": "An exquisite rose gold eternity ring featuring a continuous band of shimmering diamonds, symbolizing everlasting love."
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "category": "Wedding Invitations",
         "name": "Vintage Floral Wedding Invitations",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/kg0y7kS/Wedding-Invitations1.jpg",
         "price": 3.50,
         "detail": "Elegant vintage floral wedding invitations featuring delicate flower illustrations and classic typography."
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "category": "Wedding Invitations",
         "name": "Rustic Woodland Wedding Invites",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/rZprhhp/Wedding-Invitations2.jpg",
         "price": 2.75,
         "detail": "Capture the charm of a woodland wedding with these rustic-inspired invitations adorned with woodland motifs."
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "category": "Wedding Invitations",
         "name": "Modern Geometric Wedding Cards",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/7JL511F/Wedding-Invitations3.jpg",
         "price": 4.00,
         "detail": "Contemporary and stylish wedding cards with geometric designs and a touch of gold foil accents."
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "category": "Wedding Decorations",
         "name": "Crystal Chandelier Centerpiece",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/KDj2Vx1/Wedding-Decorations1.jpg",
         "price": 85.00,
         "detail": "Elevate your reception decor with these exquisite crystal chandelier centerpieces that add a touch of luxury."
     },
@@ -83,7 +83,7 @@
         "id": 11,
         "category": "Wedding Decorations",
         "name": "Rustic Wedding Table Numbers",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/s9vSGB9/Wedding-Decorations2.jpg",
         "price": 6.50,
         "detail": "Set the table in style with these rustic wooden table numbers, perfect for a country-themed wedding."
     },
@@ -91,7 +91,7 @@
         "id": 12,
         "category": "Wedding Decorations",
         "name": "Gold Foil Confetti Balloons",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a71fe7a6f4ca33202272999/1589411226047-9K88E5DWTXY8BLY84RP6/N%26DJ-367.jpg?format=750w",
+        "img": "https://i.ibb.co/qrTn4bQ/Wedding-Decorations3.jpg",
         "price": 12.00,
         "detail": "Add a touch of glamour to your wedding venue with these gold foil confetti balloons that sparkle and shine."
     }
