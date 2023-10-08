@@ -5,6 +5,8 @@ import ServiceDetails from "../Pages/Home/Service/ServiceDetails";
 import Login from "../Pages/Home/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Shop from "../Pages/Shop/Shop";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 
@@ -13,6 +15,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -27,6 +30,12 @@ export const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+
+            },
+            {
+                path: '/shop',
+                element: <Shop></Shop>,
+                loader: () => fetch('/shop.json')
 
             },
             {

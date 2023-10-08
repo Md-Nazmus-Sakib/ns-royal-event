@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 const Register = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext)
     const navigate = useNavigate();
-    const [error, setError] = useState(null);
+    const [error, setError] = useState('');
 
     const handelRegister = (event) => {
         event.preventDefault();
@@ -17,6 +17,16 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
+        setError('')
+        if (password.length < 6) {
+            return setError('password must be gater than 6 character or longer.')
+        }
+        else if (!/^(?=.*[A-Z]).*$/.test(password)) {
+            return setError('password must be one upper case')
+        }
+        else if (! /^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).*$/.test(password)) {
+            return setError('password must be one special Character')
+        }
         console.log(name, email, password)
         createUser(email, password)
             .then(result => {
@@ -35,12 +45,12 @@ const Register = () => {
                         navigate('/')
                     })
                     .catch(error => {
-                        console.log(error)
+
                         setError(error.message)
                     })
             })
             .catch(error => {
-                console.log(error.message)
+
                 setError(error.message)
             })
         setError(null)

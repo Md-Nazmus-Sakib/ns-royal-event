@@ -11,7 +11,7 @@ const Navbar = () => {
     }
     const pages = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/our'}>Our Menu</NavLink></li>
+        <li><NavLink to={'/shop'}>Shop</NavLink></li>
 
         {
             user ? <div title={user?.displayName} className='lg:flex justify-center items-center gap-4'>
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
                 {/* <img src={logo} alt="" /> */}
                 <div className="btn-ghost normal-case text-xl p-2 rounded-md text-center">
-                    <h1>NS ROYEl</h1>
+                    <h1>NS ROYAL</h1>
                     <h2>Event</h2>
                 </div>
             </div>

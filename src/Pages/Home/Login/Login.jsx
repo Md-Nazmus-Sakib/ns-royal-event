@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 
 const Login = () => {
     const { signIn, googleSignIn } = useContext(AuthContext);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
     // console.log(location)
@@ -20,6 +20,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
+        setError('')
 
         signIn(email, password)
             .then(result => {
@@ -44,6 +45,7 @@ const Login = () => {
                 console.log(loggedUser)
                 navigate(from, { replace: true })
             })
+            .catch(error => setError(error.message))
     }
 
     return (
