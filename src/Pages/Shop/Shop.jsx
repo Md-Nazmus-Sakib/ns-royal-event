@@ -12,13 +12,12 @@ const Shop = () => {
     const weddingRings = products.filter(ring => (ring.category).toLowerCase() === 'Wedding Rings'.toLowerCase())
     const weddingInvitations = products.filter(invitation => (invitation.category).toLowerCase() === 'Wedding Invitations'.toLowerCase())
     const weddingDecorations = products.filter(decoration => (decoration.category).toLowerCase() === 'Wedding Decorations'.toLowerCase())
-    console.log(weddingDress)
+    // console.log(weddingDress)
     return (
         <div className='mt-24'>
             <ShopHeader></ShopHeader>
             <div style={{ backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url(${imgBg})`, backgroundSize: "cover" }} className='bg-fixed py-24'>
-                {/* <div> */}
-                {/* <img className='' src={imgBg} alt="" /> */}
+
                 <Products products={weddingDress}
                     subHeader='Our New Collection Of Dress'
                     header="Wedding Dress"

@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import headerImg1 from '../../../assets/Images/Header/header1.jpg'
 import headerImg2 from '../../../assets/Images/Header/header2.jpg'
 import headerImg3 from '../../../assets/Images/Header/header3.jpg'
@@ -16,7 +17,7 @@ const Header = () => {
     return (
         <div>
             <div className='relative my-12'>
-                <div className="carousel w-full max-h-1/2 border border-red-600">
+                <div className="carousel w-full ">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src={headerImg1} className="w-full h-[600px]" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2 z-20">
@@ -51,7 +52,7 @@ const Header = () => {
                         <div className='md:w-1/2 text-center p-4 sticky top-20 md:static'>
                             <h1 className='text-2xl md:text-5xl font-extrabold my-8'>Hello! We Are an Event <br /> Planning Agency</h1>
                             <p>As the premier event planning company in the area, we know that it's not “one size fits all”. Each event and client is unique and we believe our services should be as well. We know that it should be “Can I hire a planner?” not “Can I afford one?”.</p>
-                            <button className="btn btn-secondary my-8">Secondary</button>
+                            <Link to={'/about'}> <button className="btn btn-secondary my-8">Details</button></Link>
                         </div>
                     </div>
                 </div>
