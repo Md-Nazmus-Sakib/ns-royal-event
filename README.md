@@ -1,4 +1,4 @@
-# NS ROYAL EVENT
+# [NS ROYAL EVENT](https://ns-royal-event.web.app)
 
 ## Top Feature Of this Page
 - This is a wedding related website in the home page there is a carousel of the image.
@@ -9,6 +9,3 @@ a navbar and a footer is shown in all the page. there is no registration page sh
 - In the Registration page there are error message when a user put password is less than 6 characters don't have a capital letter or a special character.
 
 
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
