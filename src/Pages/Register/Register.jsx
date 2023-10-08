@@ -6,7 +6,7 @@ import { AuthContext } from '../../AuthProvider/AuthProvider';
 import Swal from 'sweetalert2';
 
 const Register = () => {
-    const { createUser, updateUserProfile } = useContext(AuthContext)
+    const { createUser, updateUserProfile, setLoading } = useContext(AuthContext)
     const navigate = useNavigate();
     const [error, setError] = useState('');
 
@@ -42,7 +42,9 @@ const Register = () => {
                             showConfirmButton: false,
                             timer: 1500
                         })
+                        setLoading(false)
                         navigate('/')
+
                     })
                     .catch(error => {
 
@@ -53,7 +55,7 @@ const Register = () => {
 
                 setError(error.message)
             })
-        setError(null)
+
 
     }
     return (

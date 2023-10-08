@@ -3,8 +3,15 @@ import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
-    // console.log(user?.displayName)
+    const { user, logOut, loading } = useContext(AuthContext);
+
+
+    if (loading) {
+        return <div className='my-32 flex justify-center items-center w-full h-screen'>
+            <progress className="progress progress-secondary mx-auto w-56"></progress>
+        </div>
+    }
+
     const handelLogOut = () => {
         logOut()
             .then(() => { })
