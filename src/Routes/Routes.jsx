@@ -7,6 +7,7 @@ import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Shop from "../Pages/Shop/Shop";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Aboutus from "../Pages/Aboutus/Aboutus";
 
 
 
@@ -34,8 +35,14 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/shop',
-                element: <Shop></Shop>,
+                element: <PrivateRoute> <Shop></Shop></PrivateRoute>,
                 loader: () => fetch('/shop.json')
+
+            },
+            {
+                path: '/about',
+                element: <PrivateRoute> <Aboutus></Aboutus></PrivateRoute>
+
 
             },
             {

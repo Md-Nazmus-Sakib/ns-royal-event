@@ -15,7 +15,10 @@ const ServiceDetails = () => {
             <div className="card glass mt-36 md:w-2/3 mx-auto border border-red-600">
                 <figure className='m-4'><img className='rounded-2xl w-full' src={image} alt="wedding" /></figure>
                 <div className="card-body items-center text-justify md:mx-18 text-white">
-                    <h2 className="card-title text-2xl md:text-5xl text-secondary border-b-8 pb-8 border-pink-600 font-semibold" style={{ textShadow: ' 4px 4px 8px black' }}>{name}</h2>
+                    <h2 className="card-title text-2xl md:text-5xl text-secondary border-b-8 pb-8 border-pink-600 font-semibold" style={{ textShadow: ' 4px 4px 8px black' }}>{name}
+                        <div className="badge p-4 badge-secondary">$ {price}</div>
+                    </h2>
+
                     <p className='text-xl md:text-3xl mt-10'>{description}</p>
                     <p className='text-xl md:text-2xl my-10'>{details}</p>
                     <div className="card-actions justify-end">

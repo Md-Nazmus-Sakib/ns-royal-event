@@ -12,6 +12,7 @@ const Navbar = () => {
     const pages = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/shop'}>Shop</NavLink></li>
+        <li><NavLink to={'/about'}>About Us</NavLink></li>
 
         {
             user ? <div title={user?.displayName} className='lg:flex justify-center items-center gap-4'>
