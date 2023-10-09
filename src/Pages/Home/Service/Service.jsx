@@ -2,12 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cardImg from '../../../assets/Images/Header/design.png'
 import heartImg from '../../../assets/Images/Header/heart.png'
+import AOS from 'aos';
+
 
 const Service = ({ service }) => {
     const { id, image, name, price, description } = service;
     return (
         <div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" className={`card bg-base-100 shadow-xl h-96 relative text-white ${id % 2 === 0 ? 'bg-gradient-to-b from-violet-500 to-fuchsia-500' : 'bg-gradient-to-t from-violet-500 to-fuchsia-500'}`}>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+
+
+                className={`card bg-base-100 shadow-xl h-96 relative text-white ${id % 2 === 0 ? 'bg-gradient-to-b from-violet-500 to-fuchsia-500' : 'bg-gradient-to-t from-violet-500 to-fuchsia-500'}`}>
                 <figure className="px-10 pt-10">
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>

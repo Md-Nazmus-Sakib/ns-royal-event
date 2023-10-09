@@ -9,11 +9,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
-    const services = useLoaderData();
     useEffect(() => {
         AOS.init();
-        AOS.refresh();
+        AOS.refreshHard()
+
     }, []);
+
+    const services = useLoaderData();
+
     return (
         <div>
             <Header></Header>

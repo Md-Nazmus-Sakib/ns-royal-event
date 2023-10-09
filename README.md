@@ -1,4 +1,5 @@
 # [NS ROYAL EVENT](https://ns-royal-event.web.app)
+## [Live side Link](https://ns-royal-event.web.app/)
 
 ## Top Feature Of this Page
 - This is a wedding related website in the home page there is a carousel of the image.

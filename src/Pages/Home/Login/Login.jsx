@@ -35,7 +35,10 @@ const Login = () => {
                 })
                 navigate(from, { replace: true })
             })
-            .catch(error => setError(error.message))
+            .catch(error => {
+                console.log(error)
+                setError(error.message)
+            })
     }
 
     const handelGoogleLogIn = () => {
