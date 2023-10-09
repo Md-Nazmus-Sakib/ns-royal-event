@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cardImg from '../../../assets/Images/Header/design.png'
 import heartImg from '../../../assets/Images/Header/heart.png'
-import AOS from 'aos';
+
 
 
 const Service = ({ service }) => {
