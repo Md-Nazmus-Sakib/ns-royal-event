@@ -6,7 +6,7 @@ import straightImg from '../../../assets/Images/Shop/straight.png'
 
 const WhyBest = () => {
     return (
-        <div className='my-12'>
+        <div className='my-12  overflow-hidden'>
             <div className='sm:w-1/2 mx-auto text-center'>
                 <h4>-- Why We Are Best --</h4>
                 <h1 className='text-2xl md:text-5xl font-bold my-8 mx-auto p-2 w-5/6 '>TO SAVE YOUR VALUABLE TIME WITH US</h1>
@@ -39,8 +39,9 @@ const WhyBest = () => {
                     <h2 className='text-3xl text-bold my-6'>A Celebration of Love: The Wedding Ceremony</h2>
                     <p>The wedding ceremony is the heart and soul of a wedding day, a momentous occasion that brings together two people in a bond of love, commitment, and shared dreams. It is a sacred and joyous celebration, a testament to the love story that has led two hearts to unite as one.</p>
                 </div>
-                {/* data-aos="fade-left" data-aos-offset="300" data-aos-duration="3000"  */}
-                <div data-aos="zoom-in-down" data-aos-duration="3000" className=' text-justify'>
+                {/* data-aos="zoom-in-down" data-aos-duration="3000"  */}
+                {/*  */}
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="3000" className=' text-justify'>
 
                     <div className="avatar flex justify-center">
                         <div className="w-64 mx-auto rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">

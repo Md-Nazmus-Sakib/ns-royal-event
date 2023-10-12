@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const { user, logOut, loading } = useContext(AuthContext);
@@ -14,7 +15,15 @@ const Navbar = () => {
 
     const handelLogOut = () => {
         logOut()
-            .then(() => { })
+            .then(() => {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Successfully Log Out',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            })
     }
     const pages = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
@@ -24,7 +33,7 @@ const Navbar = () => {
         {
             user ? <div title={user?.displayName} className='lg:flex justify-center items-center gap-4'>
 
-                <div className="avatar font-2xl">
+                <div className="avatar font-2xl ml-4">
                     <div className="w-12 rounded-full tooltip text-white tooltip-bottom" data-tip="hello">
                         <img src={user?.photoURL} />
 

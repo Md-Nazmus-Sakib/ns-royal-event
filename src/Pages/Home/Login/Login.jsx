@@ -7,7 +7,7 @@ import { FaGoogle } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 
 const Login = () => {
-    const { signIn, googleSignIn } = useContext(AuthContext);
+    const { signIn, googleSignIn, setLoading } = useContext(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
@@ -37,6 +37,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                setLoading(false)
                 setError(error.message)
             })
     }
@@ -48,7 +49,10 @@ const Login = () => {
                 console.log(loggedUser)
                 navigate(from, { replace: true })
             })
-            .catch(error => setError(error.message))
+            .catch(error => {
+                setLoading(false)
+                setError(error.message)
+            })
     }
 
     return (
